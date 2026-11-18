@@ -1,0 +1,72 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --bg-main: #F8FAFC;
+  --bg-surface: #FFFFFF;
+  --bg-surface-alt: #EFF6FF;
+  --bg-navy: #0F2B46;
+  --accent-blue: #2563EB;
+  --accent-orange: #F59E0B;
+  --accent-teal: #0D9488;
+  --text-primary: #0F172A;
+  --text-heading: #0F2B46;
+  --text-secondary: #475569;
+  --border-subtle: #E2E8F0;
+}
+
+.dark {
+  --bg-main: #0B1220;
+  --bg-surface: #111C2E;
+  --bg-surface-alt: #17263B;
+  --bg-navy: #0F2B46;
+  --accent-blue: #60A5FA;
+  --accent-orange: #FBBF24;
+  --accent-teal: #2DD4BF;
+  --text-primary: #F8FAFC;
+  --text-heading: #F8FAFC;
+  --text-secondary: #B8C5D6;
+  --border-subtle: #26364D;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: var(--bg-main);
+    color: var(--text-primary);
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+  .font-mono-num {
+    font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+    font-variant-numeric: tabular-nums;
+  }
+
+  body {
+    background-color: var(--bg-main);
+    color: var(--text-primary);
+    transition: background-color 220ms cubic-bezier(0.16, 1, 0.3, 1),
+                color 220ms cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .dark body {
+    letter-spacing: 0.008em;
+  }
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+/* Custom subtle scrollbars for filter strips */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
