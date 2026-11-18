@@ -1,3 +1,5 @@
+const ASSET_BASE = `${import.meta.env.BASE_URL}assets/aistudio/`;
+
 export const COMPANY_INFO = {
   brandName: 'All In One Solution',
   divisionName: 'Engineering Works',
@@ -20,10 +22,10 @@ export const COMPANY_INFO = {
       whatsappHref: 'https://wa.me/923359892741',
     },
   ],
-  logoSrc: '/assets/aistudio/eng_83d763a8.png',
-  heroBannerSrc: '/assets/aistudio/serv2_3d091b79.png',
-  servicesPosterSrc: '/assets/aistudio/serv1_d91da994.png',
-  electricalBannerSrc: '/assets/aistudio/serv_3dd6fbac.png',
+  logoSrc: ASSET_BASE + 'eng_83d763a8.png',
+  heroBannerSrc: ASSET_BASE + 'serv2_3d091b79.png',
+  servicesPosterSrc: ASSET_BASE + 'serv1_d91da994.png',
+  electricalBannerSrc: ASSET_BASE + 'serv_3dd6fbac.png',
 };
 
 export type ServiceAccent = 'blue' | 'orange' | 'teal';
@@ -57,7 +59,7 @@ export const SERVICES: ServiceItem[] = [
       'AC/DC surge protection & earthing compliance',
       'Solar inverter diagnostics, repair & cleaning',
     ],
-    imageSrc: '/assets/aistudio/serv2_3d091b79.png',
+    imageSrc: ASSET_BASE + 'serv2_3d091b79.png',
     imageAlt: 'Engineering Works technicians installing hybrid solar inverters and photovoltaic panels',
     imageClassName: 'object-cover object-center',
     responseNote: 'Residential & Commercial kW Systems',
@@ -76,7 +78,7 @@ export const SERVICES: ServiceItem[] = [
       'UPS backup wiring & voltage protection',
       '24-hour emergency fault troubleshooting',
     ],
-    imageSrc: '/assets/aistudio/serv_3dd6fbac.png',
+    imageSrc: ASSET_BASE + 'serv_3dd6fbac.png',
     imageAlt: 'Engineering Works professional electrical socket wiring and safety testing',
     imageClassName: 'object-cover object-bottom',
     responseNote: '24-Hour Emergency Dispatch Available',
@@ -95,7 +97,7 @@ export const SERVICES: ServiceItem[] = [
       'Enterprise switches, routers & multi-floor Wi-Fi',
       'Link testing, attenuation verification & troubleshooting',
     ],
-    imageSrc: '/assets/aistudio/serv1_d91da994.png',
+    imageSrc: ASSET_BASE + 'serv1_d91da994.png',
     imageAlt: 'Precision fiber optic splice enclosure and telecom termination workbench',
     imageClassName: 'object-cover object-[12%_88%]',
     responseNote: 'Precision Fiber & Structured Cabling',
@@ -114,7 +116,7 @@ export const SERVICES: ServiceItem[] = [
       'Mobile app remote viewing & motion alerts',
       'Perimeter cabling & camera maintenance',
     ],
-    imageSrc: '/assets/aistudio/serv_3dd6fbac.png',
+    imageSrc: ASSET_BASE + 'serv_3dd6fbac.png',
     imageAlt: 'Weatherproof outdoor CCTV bullet security camera installation',
     imageClassName: 'object-cover object-right-bottom',
     responseNote: 'HD & IP Surveillance Solutions',
@@ -133,7 +135,7 @@ export const SERVICES: ServiceItem[] = [
       'Refrigerant gas charging & leak pressure testing',
       'Deep pressure cleaning & annual maintenance plans',
     ],
-    imageSrc: '/assets/aistudio/serv1_d91da994.png',
+    imageSrc: ASSET_BASE + 'serv1_d91da994.png',
     imageAlt: 'Engineering Works complete AC, solar, and electrical service portfolio',
     imageClassName: 'object-cover object-top',
     responseNote: 'Split, Inverter & Commercial AC Units',
@@ -152,7 +154,7 @@ export const SERVICES: ServiceItem[] = [
       'Voltage regulator & protection relay servicing',
       'Preventive thermal & load inspection',
     ],
-    imageSrc: '/assets/aistudio/serv1_d91da994.png',
+    imageSrc: ASSET_BASE + 'serv1_d91da994.png',
     imageAlt: 'Wall-mounted Growatt and hybrid inverter systems with live voltage monitoring',
     imageClassName: 'object-cover object-[88%_26%]',
     responseNote: 'Bench-Level Electronic Diagnostics',
@@ -293,7 +295,7 @@ export const INITIAL_GALLERY_PHOTOS: GalleryPhoto[] = [
     caption:
       'Wall-mounted Growatt and hybrid solar inverter array with neat PVC conduit routing, protection breakers, and live digital AC voltage display (229V).',
     categories: ['solar', 'electronics', 'equipment', 'commercial', 'residential'],
-    src: '/assets/aistudio/serv1_d91da994.png',
+    src: ASSET_BASE + 'serv1_d91da994.png',
     alt: 'Real mounted Growatt and hybrid solar inverter wall installation',
     objectPosition: '85% 25%',
     aspect: 'wide',
@@ -306,7 +308,7 @@ export const INITIAL_GALLERY_PHOTOS: GalleryPhoto[] = [
     caption:
       'Optical fiber splice tray assembly with organized pigtail routing, SC/APC couplers, and field termination tools during a telecom installation.',
     categories: ['networking', 'commercial', 'equipment', 'team'],
-    src: '/assets/aistudio/serv1_d91da994.png',
+    src: ASSET_BASE + 'serv1_d91da994.png',
     alt: 'Real fiber optic splice enclosure tray with orange fiber cable and tools',
     objectPosition: '15% 84%',
     aspect: 'standard',
@@ -319,7 +321,7 @@ export const INITIAL_GALLERY_PHOTOS: GalleryPhoto[] = [
     caption:
       'Full-scope engineering capability spanning Growatt, Maxpower & Invex inverters, distribution panel wiring, CCTV security mounting, fiber splicing, and solar arrays.',
     categories: ['solar', 'commercial', 'electrical', 'networking', 'cctv', 'team', 'equipment'],
-    src: '/assets/aistudio/serv2_3d091b79.png',
+    src: ASSET_BASE + 'serv2_3d091b79.png',
     alt: 'Engineering Works complete solar, inverter, CCTV, electrical, and fiber optic operations',
     objectPosition: '50% 50%',
     aspect: 'wide',
@@ -332,7 +334,7 @@ export const INITIAL_GALLERY_PHOTOS: GalleryPhoto[] = [
     caption:
       'Safe live-circuit socket termination using insulated protective gloves alongside weatherproof IR bullet CCTV camera integration and 24-hour emergency support.',
     categories: ['electrical', 'cctv', 'residential', 'team', 'ac'],
-    src: '/assets/aistudio/serv_3dd6fbac.png',
+    src: ASSET_BASE + 'serv_3dd6fbac.png',
     alt: 'Electrical socket wiring with insulated gloves and outdoor bullet CCTV camera',
     objectPosition: '60% 80%',
     aspect: 'wide',
@@ -345,7 +347,7 @@ export const INITIAL_GALLERY_PHOTOS: GalleryPhoto[] = [
     caption:
       'Overview of our residential rooftop solar installations, inverter walls, fiber optic telecom enclosures, AC repair & cleaning, and electrical security services.',
     categories: ['solar', 'ac', 'electrical', 'electronics', 'residential', 'cctv', 'networking'],
-    src: '/assets/aistudio/serv1_d91da994.png',
+    src: ASSET_BASE + 'serv1_d91da994.png',
     alt: 'Engineering Works complete electrical, electronic, AC, and solar solutions poster',
     objectPosition: '50% 50%',
     aspect: 'tall',
@@ -358,7 +360,7 @@ export const INITIAL_GALLERY_PHOTOS: GalleryPhoto[] = [
     caption:
       'Pitched-roof photovoltaic panel layout engineered for clean residential aesthetics, optimal solar yield, and reliable hybrid inverter integration.',
     categories: ['solar', 'residential', 'equipment'],
-    src: '/assets/aistudio/serv1_d91da994.png',
+    src: ASSET_BASE + 'serv1_d91da994.png',
     alt: 'Residential rooftop solar panel installation showcase',
     objectPosition: '20% 28%',
     aspect: 'standard',
@@ -371,7 +373,7 @@ export const INITIAL_GALLERY_PHOTOS: GalleryPhoto[] = [
     caption:
       'Representing disciplined electrical, solar, IT, and mechanical engineering services led by Engr. Imtiaz Khan and M. Kashif Khan.',
     categories: ['team', 'commercial', 'ac', 'electronics'],
-    src: '/assets/aistudio/eng_83d763a8.png',
+    src: ASSET_BASE + 'eng_83d763a8.png',
     alt: 'Engineering Works official navy and orange logo emblem',
     objectPosition: '50% 50%',
     aspect: 'square',
