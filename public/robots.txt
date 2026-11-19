@@ -1,4 +1,7 @@
 User-agent: *
 Allow: /
 
+User-agent: SiteAuditBot
+Allow: /
+
 Sitemap: https://atifakhan.github.io/Engineeringworks/sitemap.xml
