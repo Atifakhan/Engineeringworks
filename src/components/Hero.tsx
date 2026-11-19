@@ -51,7 +51,7 @@ export function Hero({ onBookClick, onExploreClick }: HeroProps) {
             </p>
 
             <h1 className="font-display text-balance text-4xl font-extrabold leading-[1.12] tracking-tight text-[#0F2B46] sm:text-5xl lg:text-[3.35rem] dark:text-[#F8FAFC]">
-              Professional Technical Solutions. One Trusted Team.
+              Electrical, Solar & Technical Services for Homes and Businesses
             </h1>
 
             <p className="mt-5 max-w-xl text-base leading-relaxed text-[#475569] sm:text-lg dark:text-[#B8C5D6]">
