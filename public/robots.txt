@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://atifakhan.github.io/Engineeringworks/sitemap.xml
